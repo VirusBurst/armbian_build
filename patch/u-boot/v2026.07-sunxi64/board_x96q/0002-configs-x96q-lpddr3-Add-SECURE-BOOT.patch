@@ -3,15 +3,16 @@ sicXnull: https://github.com/sicXnull/armbian-build
 NickAlilovic: https://github.com/NickAlilovic/build
 Dimanaka: https://github.com/Dimanaka/armbian-build
 
+TODO: Either RECOGNIZE the right ammount of DRAM... or FORCE THAT SUKKER into 1536MB RAM >:(
+
 diff --git a/configs/x96q_lpddr3_defconfig b/configs/x96q_lpddr3_defconfig
 index 764e77dac1..828f59a9b7 100644
 --- a/configs/x96q_lpddr3_defconfig
 +++ b/configs/x96q_lpddr3_defconfig
-@@ -17,6 +17,8 @@ CONFIG_MACH_SUN50I_H616=y
+@@ -17,6 +17,7 @@ CONFIG_MACH_SUN50I_H616=y
  CONFIG_MMC_SUNXI_SLOT_EXTRA=2
  CONFIG_R_I2C_ENABLE=y
  CONFIG_SPL_I2C=y
-+CONFIG_SYS_SDRAM_SIZE=1536
 +CONFIG_SPL_IMAGE_TYPE_SUNXI_TOC0=y
  CONFIG_SPL_SYS_I2C_LEGACY=y
  CONFIG_SYS_I2C_MVTWSI=y
